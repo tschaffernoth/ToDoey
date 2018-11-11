@@ -8,7 +8,12 @@
 
 import Foundation
 
-class Item {
+class Item : Codable {
+    
+    //***********************************************************
+    //* In order for a class to be encodable, must contain only *
+    //* standard data types.  No custom ones.                   *
+    //***********************************************************
     var toDoItemDescription: String
     var doneFlag: Bool
     
